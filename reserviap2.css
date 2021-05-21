@@ -1,0 +1,200 @@
+body{
+  margin:0px;
+  font-family: 'Raleway', sans-serif;
+}
+.marg-website{
+  margin-right:50px;
+  margin-left: 50px;
+}
+.website {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 1883px;
+  object-fit: cover;
+}
+.high-page {
+  display: flex;
+  height: auto;
+  width: auto;
+  gap: 16px;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  gap: 16px;
+}
+.logo-reservia {
+  margin-right: auto;
+  padding-top: 65px;
+}
+.menu {
+  display: flex;
+}
+.item {
+  padding-top: 63px;
+  margin-right: 60px;
+  border-top: 2px solid transparent;
+}
+.item:hover {
+  color: #0065FC;
+  border-top: 2px solid;
+  cursor: pointer;
+}
+.main-accomodation{
+  width: 890px;
+  height: 544px;
+  background-color: rgba(241, 241, 241, 0.993);
+  border-radius: 18px 18px 18px 18px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  margin-right: 40px;
+}
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 544px;
+}
+.marseille-accomodation {
+  display: flex;
+  width: 1440px;
+  height: 624px;
+}
+.the-most-popular{
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  height: 544px;
+  background-color: rgba(241, 241, 241, 0.993);
+  border-radius: 18px 18px 18px 18px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+.pop{
+  display: flex;
+  align-items: center;
+}
+.most{
+  margin-right: 90px;
+}
+.variation{
+  font-size: x-large;
+}
+.accomodation-card {
+  width: 245px;
+  height: 200px;
+  padding: 5px;
+  margin: 14px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 5px 5px 10px grey;
+}
+.popular-card {
+  width: 343px;
+  height: 143px;
+  padding: 5px;
+  margin: 14px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 5px 5px 10px grey;
+}
+.accomodation-card-image {
+  width: auto;
+  height: 110px;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+}
+.popular-card-image{
+  width: 127px;
+  height: 133px;
+  border-radius: 18px 0px 0px 18px;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+.image-annie {
+  margin-top: -55px;
+}
+.image-marcus{
+  margin-top: -25px;
+}
+.image-fred{
+  margin-top: -23px;
+}
+.image-reisetopia{
+  margin-top: -23px;
+}
+.image-nicate{
+  margin-top: -10px;
+}
+.image-febrian{
+  margin-top: -107px;
+}
+.accomodation-card-title {
+  margin-left: 13px;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  font-size: large;
+}
+.accomodation-card-price {
+  margin-left: 13px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.accomodation-note-observe{
+  display: flex;
+  margin-left: 13px;
+  margin-top: 0px;
+}
+.accomodation-bleu{
+  color: #0065FC;
+}
+.accomodation-grey{
+  color:#F2F2F2;
+  margin-left: 4px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(241, 241, 241, 0.993);
+  height: 216px;
+  width: 1440px;
+  object-fit: contain;
+  margin-top: 62px;
+  padding-inline-start: 47px; /* a verifier */
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.assist {
+  margin-right: 206px;
+  margin-bottom: 30px;
+}
+.assist1{
+  margin-bottom: 0px;
+  margin-right: 206px;
+}
+.ul {
+  list-style-type: none;
+  padding-inline-start: 0px; /* a verifier */
+}
+li{
+  margin: 20px;
+}
+h3{
+margin-left: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: x-large;
+}
+
+

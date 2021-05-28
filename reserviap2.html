@@ -4,7 +4,9 @@
         <meta charset="utf-8"/>
         <title>reservia.P2</title>
         <link rel="stylesheet" type="text/css" href="reserviap2.css"/> 
-        <script src="https://kit.fontawesome.com/bcc844b99e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
 <body>
      <div class="website">
@@ -34,8 +36,11 @@
 
                     <form class="search-bar">
                         <div class="search-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <input class="search-text">Marseille, France</input>
+                        <div class="search">
+                            <input class="search-text">Marseille, France</input>
+                        </div>
                         <button class="search-button">Rechercher</button>
                     </form>
                 
@@ -71,16 +76,16 @@
                     <section>
                         <div class="marseille-accomodation">
                             <div class="main-accomodation">
-                                <h3>Hébergements à marseille</h3>
+                                <h3 class="main-accomadation-title">Hébergements à marseille</h3>
                                 <div class="cards-container">
                                     <div class="accomodation-card">
                                         <div class="accomodation-card-image">
                                             <div class="image-marcus">
-                                                <img srcset="marcus/marcus-1_xlarge-loke-WQJvWU_HZFo-unsplash.jpg, 
-                                                            marcus/marcus-2_large-loke-WQJvWU_HZFo-unsplash.jpg,
-                                                            marcus/marcus-3_medium-loke-WQJvWU_HZFo-unsplash.jpg,
-                                                            marcus/marcus-4_small-loke-WQJvWU_HZFo-unsplash.jpg"
-                                                            src="marcus/marcus-4_small-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                            images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                            images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                            images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                            src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                                     alt="marcus apartment image">
                                             </div>
                                         </div>
@@ -91,42 +96,14 @@
                                                 </div>
                                                 <p class="accomodation-card-price">Nuit à partir de <strong>25€</strong></p>                                                                           
                                                 <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
+                                                    <div class="stars-bleu">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                     </div>
-                                                    <div class="accomodation-grey">
-                                                            <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accomodation-card">
-                                        <div class="accomodation-card-image">
-                                            <div class="image-annie">
-                                                <img srcset="annie/annie-1_xlarge-spratt-Eg1qcIitAuA-unsplash.jpg, 
-                                                            annie/annie-2_large-spratt-Eg1qcIitAuA-unsplash.jpg,
-                                                            annie/annie-3_medium-spratt-Eg1qcIitAuA-unsplash.jpg,
-                                                            annie/annie-4_small-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                                    alt="Annie apartment image">
-                                            </div>
-                                        </div>
-                                        <div class="accomodation-card-informations">
-                                            <div class="accomodation-title-and-price">
-                                                <h3 class="accomodation-card-title">Hôtel de la mer</h3>
-                                                <p class="accomodation-card-price">Nuit à partir de 46€</p>                                                                            
-                                                <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                        <div class="accomodation-grey">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
+                                                    <div>
+                                                        <i class="fas fa-star stars-grey"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -135,24 +112,83 @@
                                     <div class="accomodation-card">
                                         <div class="accomodation-card-image">
                                             <div class="image-fred">
-                                                <img srcset="fred/fred-1_xlarge-kleber-gTbaxaVLvsg-unsplash.jpg, 
-                                                            fred/fred-2_large-kleber-gTbaxaVLvsg-unsplash.jpg,
-                                                            fred/fred-3_medium-kleber-gTbaxaVLvsg-unsplash.jpg,
-                                                            fred/fred-4_small-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                                <img srcset="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg, 
+                                                            images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg,
+                                                            images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg,
+                                                            images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                                            src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                                     alt="Fred apartment image">
                                             </div>
                                         </div>
                                         <div class="accomodation-card-informations">
                                             <div class="accomodation-title-and-price">
                                                 <h3 class="accomodation-card-title">Hôtel du port</h3>
-                                                <p class="accomodation-card-price">Nuit à partir de 52€</p>
+                                                <p class="accomodation-card-price">Nuit à partir de 52€</p>                                                                            
                                                 <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
+                                                    <div class="stars-bleu">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accomodation-card">
+                                        <div class="accomodation-card-image">
+                                            <div class="image-reisetopia">
+                                                <img srcset="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg, 
+                                                            images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg,
+                                                            images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg,
+                                                            images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                                            src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                                    alt="Reisetopia apartment image">
+                                            </div>
+                                        </div>
+                                        <div class="accomodation-card-informations">
+                                            <div class="accomodation-title-and-price">
+                                                <h3 class="accomodation-card-title">Hôtel Les mouettes</h3>
+                                                <p class="accomodation-card-price">Nuit à partir de 76€</p>
+                                                <div class="accomodation-note-observe">
+                                                    <div class="stars-bleu">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fas fa-star stars-grey"></i>
+                                                    </div>
+                                                </div>                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accomodation-card">
+                                        <div class="accomodation-card-image">
+                                            <div class="image-annie">
+                                                <img srcset="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg, 
+                                                            images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg,
+                                                            images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg,
+                                                            images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                                            src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                                    alt="Annie apartment image">
+                                            </div>
+                                        </div>
+                                        <div class="accomodation-card-informations">
+                                            <div class="accomodation-title-and-price">
+                                                <h3 class="accomodation-card-title">Hôtel de la mer</h3>
+                                                <p class="accomodation-card-price">Nuit à partir de <strong>46€</strong></p>
+                                                <div class="accomodation-note-observe">
+                                                    <div class="stars-bleu">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fas fa-star stars-grey"></i>
+                                                        <i class="fas fa-star stars-grey"></i>
                                                     </div>
                                                 </div>                                                                            
                                             </div>
@@ -161,54 +197,27 @@
                                     <div class="accomodation-card">
                                         <div class="accomodation-card-image">
                                             <div class="image-nicate">
-                                                <img srcset="nicate/nicate-1_xlarge-lee-kT-ZyaiwBe0-unsplash.jpg, 
-                                                            nicate/nicate-2_large-lee-kT-ZyaiwBe0-unsplash.jpg,
-                                                            nicate/nicate-3_medium-lee-kT-ZyaiwBe0-unsplash.jpg,
-                                                            nicate/nicate-4_small-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                                <img srcset="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg, 
+                                                            images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg,
+                                                            images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg,
+                                                            images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                                            src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                                     alt="Nicate apartment image">
                                             </div>
                                         </div>
                                         <div class="accomodation-card-informations">
                                             <div class="accomodation-title-and-price">
                                                 <h3 class="accomodation-card-title">Auberge Le Panier</h3>
-                                                <p class="accomodation-card-price">Nuit à partir de <strong>23€</strong></p>
+                                                <p class="accomodation-card-price">Nuit à partir de 23€</p> 
                                                 <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
+                                                    <div class="stars-bleu">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                     </div>
-                                                    <div class="accomodation-grey">
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                </div>                                                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accomodation-card">
-                                        <div class="accomodation-card-image">
-                                            <div class="image-reisetopia">
-                                                <img srcset="reisetopia/reisetopia-1_xlarge-B8WIgxA_PFU-unsplash.jpg, 
-                                                            reisetopia/reisetopia-2_large-B8WIgxA_PFU-unsplash.jpg,
-                                                            reisetopia/reisetopia-3_medium-B8WIgxA_PFU-unsplash.jpg,
-                                                            reisetopia/reisetopia-4_small-B8WIgxA_PFU-unsplash.jpg"
-                                                    alt="Reisetopia apartment image">
-                                            </div>
-                                        </div>
-                                        <div class="accomodation-card-informations">
-                                            <div class="accomodation-title-and-price">
-                                                <h3 class="accomodation-card-title">Hôtel Les mouettes</h3>
-                                                <p class="accomodation-card-price">Nuit à partir de 76€</p> 
-                                                <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <div class="accomodation-grey">
-                                                        <i class="fas fa-star"></i>
+                                                    <div>
+                                                        <i class="fas fa-star stars-grey"></i>
                                                     </div>
                                                 </div>                                                                           
                                             </div>
@@ -217,10 +226,11 @@
                                     <div class="accomodation-card">
                                         <div class="accomodation-card-image">
                                             <div class="image-febrian">
-                                                <img srcset="febrian/febrian-1_xlarge-zakaria-M6S1WvfW68A-unsplash.jpg, 
-                                                            febrian/febrian-2_large-zakaria-M6S1WvfW68A-unsplash.jpg,
-                                                            febrian/febrian-3_medium-zakaria-M6S1WvfW68A-unsplash.jpg,
-                                                            febrian/febrian-4_small-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                                <img srcset="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg, 
+                                                            images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg,
+                                                            images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg,
+                                                            images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                                            src="4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                                     alt="Febrian apartment image">
                                             </div>
                                         </div>
@@ -229,7 +239,7 @@
                                                 <h3 class="accomodation-card-title">Hôtel chez Anima</h3>
                                                 <p class="accomodation-card-price">Nuit à partir de 96€</p>
                                                 <div class="accomodation-note-observe">
-                                                    <div class="accomodation-bleu">
+                                                    <div class="stars-bleu">
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
                                                         <i class="fas fa-star"></i>
@@ -254,10 +264,11 @@
                                 <div class="cards-container1">
                                     <div class="popular-card">
                                         <div class="popular-card-image">
-                                            <img srcset="emile/emile-1_xlarge-guillemot-Bj_rcSC5XfE-unsplash.jpg,  
-                                                        emile/emile-2_large-guillemot-Bj_rcSC5XfE-unsplash.jpg,
-                                                        emile/emile-3_medium-guillemot-Bj_rcSC5XfE-unsplash.jpg,
-                                                        emile/emile-4_small-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                            <img srcset="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg,  
+                                                        images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg,
+                                                        images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg,
+                                                        images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                                        src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                                 alt="Emile apartment image">
                                         </div>
                                         <div class="popular-card-informations">
@@ -266,19 +277,23 @@
                                                 <h4 class="popular-card-price">Nuit à partir de 128€</h4>                                                                            
                                             </div>
                                             <div class="popular-note-observe">
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
+                                                <div class="stars-bleu">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="popular-card">
                                         <div class="popular-card-image">
-                                            <img srcset="aw/aw-1_xlarge-creative-VGs8z60yT2c-unsplash.jpg, 
-                                                        aw/aw-2_large-creative-VGs8z60yT2c-unsplash.jpg,
-                                                        aw/aw-3_medium-creative-VGs8z60yT2c-unsplash.jpg,
-                                                        aw/aw-4_small-creative-VGs8z60yT2c-unsplash.jpg"
+                                            <img srcset="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg, 
+                                                        images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg,
+                                                        images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg,
+                                                        images/hebergements/4_small/aw-4_small-creative-VGs8z60yT2c-unsplash.jpg"
+                                                        src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                                 alt="Aw apartment image">
                                         </div>
                                         <div class="popular-card-informations">
@@ -287,19 +302,25 @@
                                                 <h4 class="popular-card-price">Nuit à partir de 71€</h4>                                                                            
                                             </div>
                                             <div class="popular-note-observe">
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
+                                                <div class="stars-bleu">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-star stars-grey"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="popular-card">
                                         <div class="popular-card-image">
-                                            <img srcset="febrian2/febrian-1_xlarge-zakaria-sjvU0THccQA-unsplash.jpg, 
-                                                        febrian2/febrian-2_large-zakaria-sjvU0THccQA-unsplash.jpg,
-                                                        febrian2/febrian-3_medium-zakaria-sjvU0THccQA-unsplash.jpg,
-                                                        febrian2/febrian-4_small-zakaria-sjvU0THccQA-unsplash.jpg"
+                                            <img srcset="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg, 
+                                                        images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg,
+                                                        images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg,
+                                                        images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                                        src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                                 alt="Febrian apartment image">
                                         </div>
                                         <div class="popular-card-informations">
@@ -308,25 +329,143 @@
                                                 <h4 class="popular-card-price">Nuit à partir de 68€</h4>                                                                            
                                             </div>
                                             <div class="popular-note-observe">
-                                                <i class="stars"></i>
-                                                <i class="fa-star"></i>
-                                                <i class="stars"></i>
-                                                <i class="stars"></i>
+                                                <div class="stars-bleu">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-star stars-grey"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                                
+                        <div class="activity-title">Activités à Marseille
+                        </div>
+                        <div class="marseille-activity">
+                            <div class="activity-site1">
+                                <div class="site-card-a">
+                                    <div class="site-card-image-L">
+                                        <div class="image-large">
+                                            <img srcset="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg, 
+                                                        images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg,
+                                                        images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg,
+                                                        images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                                        src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                                alt="Reno site image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-site2">
+                                <div class="site-card-b">
+                                    <div class="accomodation-card-image">
+                                        <div class="image-marcus">
+                                            <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                alt="marcus apartment image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                                <div class="site-card-b">
+                                    <div class="accomodation-card-image">
+                                        <div class="image-marcus">
+                                            <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                alt="marcus apartment image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-site3">
+                                <div class="site-card-a">
+                                    <div class="site-card-image-L">
+                                        <div class="image-large">
+                                            <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                alt="marcus apartment image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activity-site4">
+                                <div class="site-card-b">
+                                    <div class="accomodation-card-image">
+                                        <div class="image-marcus">
+                                            <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                alt="marcus apartment image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                                <div class="site-card-b">
+                                    <div class="accomodation-card-image">
+                                        <div class="image-marcus">
+                                            <img srcset="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg, 
+                                                        images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+                                                        images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                                alt="marcus apartment image">
+                                        </div>
+                                    </div>
+                                    <div class="site-card-information">
+                                        <div class="size-text">
+                                            <h3 class="site-title">Vieux Port</h3>
+                                        </div>     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                                     
                       
                     </section>
                 </main>
                 <footer><!--list parents: assist-->
-                    <div class="footer">
+                    <div class="footer-assist">
                         <div class="assist1">
-                            <h3>A propos</h3>
+                            <h3 class="footer-title">A propos</h3>
                             <ul class="ul">
                                 <li>Fonctionnemenet du site</li>
                                 <li>Conditions générales de vente</li>

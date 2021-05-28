@@ -1,7 +1,23 @@
 body{
-  margin:0px;
+  margin: 0px;
   font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  width: 100%;
 }
+
+h1{
+  font-size: 1.4em
+}
+
+h2{
+  font-size: 1.3em;
+}
+
+h3{
+  font-size: 1.2em;
+}
+
+
 .marg-website{
   margin-right:50px;
   margin-left: 50px;
@@ -9,15 +25,47 @@ body{
 .website {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+header{
   width: 1440px;
-  height: 1883px;
-  object-fit: cover;
+  margin: 0 auto;
 }
 .high-page {
   display: flex;
   height: auto;
   width: auto;
   gap: 16px;
+}
+.search-text{
+  height: 43px;
+  width: 19px;
+  border: solid transparent;
+}
+.search-bar{
+  display: flex;
+}
+.search-icon{
+  display: flex;
+  background-color: #F2F2F2;
+  align-items: center;
+  width: 52px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  justify-content: space-evenly;
+}
+.search{
+  height: 52px;
+  width: 234px;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+}
+.search-button{
+  background-color: #0065FC;
+  color: white ;
+  width: 133px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 a{
   text-decoration: none;
@@ -44,26 +92,26 @@ nav{
   cursor: pointer;
 }
 .main-accomodation{
-  width: 890px;
+  max-width: 810px;
   height: 544px;
   background-color: rgba(241, 241, 241, 0.993);
   border-radius: 18px 18px 18px 18px;
-  padding-right: 35px;
-  padding-left: 35px;
   padding-top: 35px;
   padding-bottom: 40px;
   margin-right: 40px;
+  padding-left: 35px;
+    padding-right: 35px;
 }
 .cards-container{
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 544px;
+  width: 810px;
+  justify-content: space-around;
+  gap: 14px;
 }
 .marseille-accomodation {
   display: flex;
-  width: 1440px;
-  height: 624px;
+  max-width: 1340px;
 }
 .the-most-popular{
   display: flex;
@@ -91,7 +139,7 @@ nav{
   width: 245px;
   height: 200px;
   padding: 5px;
-  margin: 14px;
+  margin-top: 7px;
   border-radius: 25px;
   background-color: white;
   box-shadow: 5px 5px 10px grey;
@@ -105,6 +153,7 @@ nav{
   box-sizing: border-box;
   background-color: white;
   box-shadow: 5px 5px 10px grey;
+  display: flex;
 }
 .accomodation-card-image {
   width: auto;
@@ -118,8 +167,13 @@ nav{
   border-radius: 18px 0px 0px 18px;
   overflow: hidden;
 }
+.popular-card-informations{
+  width: 200px;
+}
 img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .image-annie {
   margin-top: -55px;
@@ -137,7 +191,14 @@ img{
   margin-top: -10px;
 }
 .image-febrian{
-  margin-top: -107px;
+  margin-top: -126px;
+}
+.image-large{
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
 }
 .accomodation-card-title {
   margin-left: 13px;
@@ -155,25 +216,54 @@ img{
   margin-left: 13px;
   margin-top: 0px;
 }
-.accomodation-bleu{
+.stars-bleu{
   color: #0065FC;
 }
-.accomodation-grey{
+.stars-grey{
   color:#F2F2F2;
   margin-left: 4px;
+  margin-right: -5px;
 }
-.footer {
+.marseille-activity{
+  display: flex;
+  gap: 44px;
+  max-width: 1340px;
+}
+.site-card-a{
+  display: flex;
+  flex-wrap: wrap;
+  width: 304px;
+}
+.site-card-image-L{
+  overflow: hidden;
+  height: 390px;
+}
+.site-card-information{
+  height: 54px;
+  width: 304px;
+}
+.activity-site1{
+  height: 450px;
+  width: 304px;
+  border-radius: 20px;
+
+}
+main{
+  width: 1440px;
+  margin: 0 auto;
+}
+.footer-assist {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(241, 241, 241, 0.993);
-  height: 216px;
-  width: 1440px;
-  object-fit: contain;
+  max-height: 216px;
+  width: 100%;
   margin-top: 62px;
   padding-inline-start: 47px; /* a verifier */
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 28px;
 }
 .assist {
   margin-right: 206px;
@@ -191,7 +281,6 @@ li{
   margin: 20px;
 }
 h3{
-margin-left: 20px;
 margin-top: 0px;
 margin-bottom: 0px;
 font-size: x-large;

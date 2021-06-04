@@ -29,6 +29,9 @@ header{
   display: flex;
   gap: 16px;
 }
+.title-tank{
+  margin-top: 53px;
+}
 .search-text{
   height: 43px;
   width: 19px;
@@ -88,6 +91,10 @@ nav{
   color: #0065FC;
   border-top: 2px solid;
   cursor: pointer;
+}
+.filters-logo:hover {
+  background-color: rgb(144, 230, 132);
+  transition-delay: 1ms;
 }
 .filters-container{
   display: flex;
@@ -167,7 +174,13 @@ nav{
   flex-wrap: wrap;
   width: 810px;
   justify-content: space-around;
-  gap: 14px;
+  gap: 18px;
+}
+.cards-container1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  justify-content: space-around;
 }
 .marseille-accomodation {
   display: flex;
@@ -180,17 +193,16 @@ nav{
   flex-direction: column;
   align-items: center;
   width: 418px;
-  height: 544px;
+  height: 619px;
   background-color: rgba(241, 241, 241, 0.993);
   border-radius: 18px 18px 18px 18px;
   padding-right: 35px;
   padding-left: 35px;
-  padding-top: 35px;
-  padding-bottom: 40px;
 }
 .pop{
   display: flex;
   align-items: center;
+  padding-top: 20px;
 }
 .most{
   margin-right: 90px;

@@ -2,7 +2,6 @@ body{
   margin: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  width: 100%;
 }
 
 h1{
@@ -18,23 +17,16 @@ h3{
 }
 
 
-.marg-website{
-  margin-right:50px;
-  margin-left: 50px;
-}
 .website {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
+
 header{
   width: 1440px;
   margin: 0 auto;
 }
 .high-page {
   display: flex;
-  height: auto;
-  width: auto;
   gap: 16px;
 }
 .search-text{
@@ -44,6 +36,7 @@ header{
 }
 .search-bar{
   display: flex;
+  margin-bottom: 32px;
 }
 .search-icon{
   display: flex;
@@ -86,13 +79,80 @@ nav{
   margin-right: 60px;
   border-top: 2px solid transparent;
 }
+.item1{
+  padding-top: 63px;
+  margin-right: 60px;
+  border-top: none;
+}
 .item:hover {
   color: #0065FC;
   border-top: 2px solid;
   cursor: pointer;
 }
+.filters-container{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+.filters-logo{
+  height: 49px;
+  width: 49px;
+  border-radius: 50px;
+  background-color: #DEEBFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 6px;
+}
+.filters-box1{
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 190px;
+  border-radius: 50px;
+  border: 2px solid rgba(241, 241, 241, 0.993);
+}
+.filters-box2{
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 148px;
+  border-radius: 50px;
+  border: 2px solid rgba(241, 241, 241, 0.993);
+}
+.filters-box3{
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 180px;
+  border-radius: 50px;
+  border: 2px solid rgba(241, 241, 241, 0.993);
+}
+.filters-box4{
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 237px;
+  border-radius: 50px;
+  border: 2px solid rgba(241, 241, 241, 0.993);
+}
+.information-bar{
+  display: flex;
+  margin-bottom: 39px;
+  align-items: center;
+}
+.logo-information{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 22px;
+  width: 22px;
+  border: 2px solid rgba(241, 241, 241, 0.993);
+  margin-right: 11px;
+}
 .main-accomodation{
-  max-width: 810px;
+  width: 810px;
   height: 544px;
   background-color: rgba(241, 241, 241, 0.993);
   border-radius: 18px 18px 18px 18px;
@@ -100,7 +160,7 @@ nav{
   padding-bottom: 40px;
   margin-right: 40px;
   padding-left: 35px;
-    padding-right: 35px;
+  padding-right: 35px;
 }
 .cards-container{
   display: flex;
@@ -111,12 +171,15 @@ nav{
 }
 .marseille-accomodation {
   display: flex;
-  max-width: 1340px;
+  flex-wrap:  wrap;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .the-most-popular{
   display: flex;
   flex-direction: column;
-  width: 385px;
+  align-items: center;
+  width: 418px;
   height: 544px;
   background-color: rgba(241, 241, 241, 0.993);
   border-radius: 18px 18px 18px 18px;
@@ -134,6 +197,7 @@ nav{
 }
 .variation{
   font-size: x-large;
+  padding-left: 38px;
 }
 .accomodation-card {
   width: 245px;
@@ -142,7 +206,7 @@ nav{
   margin-top: 7px;
   border-radius: 25px;
   background-color: white;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px rgb(212, 211, 211);
 }
 .popular-card {
   width: 343px;
@@ -152,7 +216,7 @@ nav{
   border-radius: 25px;
   box-sizing: border-box;
   background-color: white;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px rgb(212, 211, 211);
   display: flex;
 }
 .accomodation-card-image {
@@ -160,6 +224,12 @@ nav{
   height: 110px;
   border-radius: 18px 18px 0 0;
   overflow: hidden;
+}
+.popular-card{
+  display: flex;
+  width: 345px;
+  height: 145px;
+  align-items: center;
 }
 .popular-card-image{
   width: 127px;
@@ -169,6 +239,8 @@ nav{
 }
 .popular-card-informations{
   width: 200px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 img{
   width: 100%;
@@ -200,6 +272,13 @@ img{
   border-top-left-radius: 20px;
   overflow: hidden;
 }
+.image-small{
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
 .accomodation-card-title {
   margin-left: 13px;
   margin-top: 9px;
@@ -224,46 +303,96 @@ img{
   margin-left: 4px;
   margin-right: -5px;
 }
+.stars-grey1{
+  color:#F2F2F2;
+  margin-left: 1px;
+  margin-right: -5px;
+}
 .marseille-activity{
   display: flex;
-  gap: 44px;
-  max-width: 1340px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 1440px;
+  margin-bottom: 59px;
+}
+.site-card{
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(212, 211, 211);
+}
+.site-card1{
+  box-shadow: 5px 5px 10px rgb(212 211 211);
+  border-radius: 20px;
+
+}
+.site-card2{
+box-shadow: 5px 5px 10px rgb(212 211 211);
+border-radius: 20px;
+margin-top: 46px;
+}
+.site-card3{
+  box-shadow: 5px 5px 10px rgb(212 211 211);
+  border-radius: 20px;
+  margin-bottom: 46px;
 }
 .site-card-a{
   display: flex;
   flex-wrap: wrap;
-  width: 304px;
+  width: 302px; 
+}
+.site-card-b{
+  width: 302px;
+  height: 179px;
+}
+.site-card-b-bis{
+ width: 302px;
+  height: 109px;
 }
 .site-card-image-L{
   overflow: hidden;
   height: 390px;
 }
 .site-card-information{
-  height: 54px;
-  width: 304px;
+  height: 56px;
+  width: 302px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.site-title{
+  margin: 0px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.activity-title{
+  margin-bottom: 24px;
+  margin-left: 15px;
+  margin-top: 63px;
 }
 .activity-site1{
   height: 450px;
-  width: 304px;
+  width: 302px;
   border-radius: 20px;
 
 }
+
 main{
   width: 1440px;
   margin: 0 auto;
 }
+.footer{
+  background-color: rgba(241, 241, 241, 0.993);
+  width: 100%;
+}
 .footer-assist {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(241, 241, 241, 0.993);
-  max-height: 216px;
-  width: 100%;
+  justify-content: space-around;
+  width: 1440px;
   margin-top: 62px;
-  padding-inline-start: 47px; /* a verifier */
-  margin-left: 0px;
-  margin-right: 0px;
   padding-top: 28px;
+  margin: 0 auto;
+}
+.footer-title{
+  padding-left: 18px;
 }
 .assist {
   margin-right: 206px;
@@ -275,15 +404,11 @@ main{
 }
 .ul {
   list-style-type: none;
-  padding-inline-start: 0px; /* a verifier */
-}
+  padding-inline-start: 0px;
+} 
 li{
   margin: 20px;
 }
-h3{
-margin-top: 0px;
-margin-bottom: 0px;
-font-size: x-large;
-}
+
 
 

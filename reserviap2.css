@@ -27,6 +27,8 @@ header{
 }
 .high-page {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 16px;
 }
 .title-tank{
@@ -62,6 +64,7 @@ header{
   width: 133px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  border: none;
 }
 a{
   text-decoration: none;
@@ -71,8 +74,10 @@ nav{
   gap: 16px;
 }
 .logo-reservia {
-  margin-right: auto;
-  padding-top: 65px;
+  position: relative;
+  top: 25px;
+  width: 120px;
+  height: auto;
 }
 .menu {
   display: flex;
@@ -424,3 +429,180 @@ li{
 
 
 
+@media screen and (max-width: 375px){
+
+  .website{
+    width: 100%;
+    overflow-x: hidden
+  }
+
+  .header{
+    width: 100%;
+    padding: 0 10px;
+  } 
+  
+
+  .high-page{
+    flex-direction: column;
+  }
+
+  .logo-reservia{
+    align-self: flex-start;
+  }
+  .item1{
+    position: absolute;
+    top: -15px;
+    right: 0;
+  }
+
+  .title{
+    width: 300px;
+  }
+  .filters-title{
+    margin: 0px;
+  }
+  .filters-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .information-bar{
+    width: 340px;
+    margin-bottom: 42px;
+  }
+  .search-button{
+    width: 60px;
+    border-radius: 18px 18px 18px 18px;
+    border: none;
+  }
+
+  .search-button::before{
+    content: "\f002";
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+  }
+
+  .search-button-text{
+    display: none;
+  }
+  
+  .main-accomodation{
+    background-color: white;
+    height: 100%;
+    padding-top: 19.5px;
+  }
+  .the-most-popular{
+    width: 375px;
+    border-radius: 0%;
+    padding-left: 0;
+  }
+  .marseille-accomodation{
+    flex-direction: column-reverse;
+  }
+  .accomodation-card{
+    width: 336px;
+    height: 197px;
+  }
+  .image-annie {
+    margin-top: -104px;
+  }
+  .image-marcus{
+    margin-top: -54px;
+  }
+  .image-fred{
+    margin-top: -59px;
+  }
+  .image-reisetopia{
+    margin-top: -57px;
+  }
+  .image-nicate{
+    margin-top: -40px;
+  }
+  .image-febrian{
+    margin-top: -199px;
+  }
+  .cards-container{
+    flex-direction: column;
+    margin-left: -20px;
+  }
+  .cards-container1{
+    justify-content: none;
+  }
+  .marseille-activity{
+    flex-direction: column;
+    gap: 23px;
+    margin-left: 20px;
+  }
+  .activity-title{
+    margin-top: auto;
+  }
+  .site-card{
+    width: 336px;
+    height: 197px;
+  }
+  .site-card1{
+    width: 336px;
+    height: 197px;
+  }
+  .site-card2{
+    width: 336px;
+    height: 197px;
+    margin-top: 23px;
+  }
+  .site-card3{
+    width: 336px;
+    height: 197px;
+    margin-bottom: 23px;
+  }
+  .site-card-a{
+    width: 100%;
+    height: 133px;
+  }
+  .site-card-b{
+    width: 100%;
+    height: 133px;
+  }
+  .site-card-b-bis{
+    width: 100%;
+    height: 133px;
+  }
+  .site-card-image-L{
+    height: 100%;
+  } 
+  .activity-site1{
+    height: auto;
+    width: auto;
+  }
+  .footer-assist{
+    flex-direction: column;
+  }
+  .assist{
+    margin-bottom: 0%;
+  }
+  /* fin media querie max 375px */
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+
+
+
+  /* fin media querie max 768 */
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+
+
+
+
+  /* fin media querie max 1200 */
+}

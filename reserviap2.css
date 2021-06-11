@@ -34,10 +34,27 @@ header{
 .title-tank{
   margin-top: 53px;
 }
+.sub-title{
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 34px;
+}
+.search{
+  height: 45px;
+  width: 230px;
+  border-top: solid #F2F2F2;
+}
+.search-button{
+  position: relative;
+  left: -10px;
+  cursor: pointer;
+}
 .search-text{
   height: 43px;
-  width: 19px;
+  width: 228px;
   border: solid transparent;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .search-bar{
   display: flex;
@@ -97,7 +114,19 @@ nav{
   border-top: 2px solid;
   cursor: pointer;
 }
-.filters-logo:hover {
+.filters-box1:hover .filters-logo{
+  background-color: rgb(144, 230, 132);
+  transition-delay: 1ms;
+}
+.filters-box2:hover .filters-logo{
+  background-color: rgb(144, 230, 132);
+  transition-delay: 1ms;
+}
+.filters-box3:hover .filters-logo{
+  background-color: rgb(144, 230, 132);
+  transition-delay: 1ms;
+}
+.filters-box4:hover .filters-logo{
   background-color: rgb(144, 230, 132);
   transition-delay: 1ms;
 }
@@ -147,6 +176,10 @@ nav{
   width: 237px;
   border-radius: 50px;
   border: 2px solid rgba(241, 241, 241, 0.993);
+}
+.information{
+  font-weight: normal;
+  font-size: 1em;
 }
 .information-bar{
   display: flex;
@@ -263,6 +296,7 @@ img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 .image-annie {
   margin-top: -55px;
@@ -428,7 +462,6 @@ li{
 }
 
 
-
 @media screen and (max-width: 375px){
 
   .website{
@@ -444,17 +477,42 @@ li{
 
   .high-page{
     flex-direction: column;
+    display: block;
   }
 
   .logo-reservia{
     align-self: flex-start;
+  }
+  nav{
+    gap: 0;
+  }
+  .item:hover{
+    border-top: none;
+  }
+  .menu .item{
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 12px;
+    border-bottom: 2px solid;
+    border-top: none;
+    color: rgba(241, 241, 241, 0.993);
+  }
+  .menu .item:hover{
+    color: #0065FC;
+    margin: 0px;
+    padding-bottom: 12px;
+   border-bottom: 2px solid; 
+   flex: 1;
+
   }
   .item1{
     position: absolute;
     top: -15px;
     right: 0;
   }
-
+  .title-tank{
+    margin-top: 0;
+  }
   .title{
     width: 300px;
   }
@@ -465,10 +523,11 @@ li{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 14px;
+    margin-bottom: 10px;
   }
   .information-bar{
     width: 340px;
-    margin-bottom: 42px;
+    margin-bottom: 10px;
   }
   .search-button{
     width: 60px;
@@ -577,9 +636,6 @@ li{
   }
   .footer-assist{
     flex-direction: column;
-  }
-  .assist{
-    margin-bottom: 0%;
   }
   /* fin media querie max 375px */
 }

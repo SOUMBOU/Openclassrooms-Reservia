@@ -68,6 +68,8 @@ header{
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   justify-content: space-evenly;
+  position: relative;
+  left: 2px;
 }
 .search{
   height: 52px;
@@ -85,6 +87,11 @@ header{
 }
 a{
   text-decoration: none;
+  color: #000;
+  border: solid transparent;
+}
+span{
+  font-weight: bold;
 }
 nav{
   display: flex;
@@ -105,6 +112,7 @@ nav{
   border-top: 2px solid transparent;
 }
 .item1{
+  color: #0065FC;
   padding-top: 63px;
   margin-right: 60px;
   border-top: none;
@@ -115,19 +123,19 @@ nav{
   cursor: pointer;
 }
 .filters-box1:hover .filters-logo{
-  background-color: rgb(144, 230, 132);
+  background-color: rgb(33, 4, 66);
   transition-delay: 1ms;
 }
 .filters-box2:hover .filters-logo{
-  background-color: rgb(144, 230, 132);
+  background-color: rgb(33, 4, 66);
   transition-delay: 1ms;
 }
 .filters-box3:hover .filters-logo{
-  background-color: rgb(144, 230, 132);
+  background-color: rgb(33, 4, 66);
   transition-delay: 1ms;
 }
 .filters-box4:hover .filters-logo{
-  background-color: rgb(144, 230, 132);
+  background-color: rgb(33, 4, 66);
   transition-delay: 1ms;
 }
 .filters-container{
@@ -488,6 +496,7 @@ li{
   }
   .item:hover{
     border-top: none;
+    font-weight: bold;
   }
   .menu .item{
     margin: 0 auto;
@@ -505,10 +514,13 @@ li{
    flex: 1;
 
   }
+  .item{
+    text-align: center;
+  }
   .item1{
     position: absolute;
     top: -15px;
-    right: 0;
+    left: 275px;
   }
   .title-tank{
     margin-top: 0;
@@ -636,6 +648,15 @@ li{
   }
   .footer-assist{
     flex-direction: column;
+  }
+  #c{
+    position: relative;
+    top: -40px;
+    right: 8px;
+  }
+  #b{
+    position: relative;
+    right: 4px;
   }
   /* fin media querie max 375px */
 }

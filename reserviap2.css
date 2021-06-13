@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
@@ -38,6 +38,9 @@ header{
   font-weight: normal;
   font-size: 1em;
   margin-bottom: 34px;
+}
+.menu-color{
+  color: #0065FC;
 }
 .search{
   height: 45px;
@@ -88,7 +91,6 @@ header{
 a{
   text-decoration: none;
   color: #000;
-  border: solid transparent;
 }
 span{
   font-weight: bold;
@@ -521,7 +523,8 @@ li{
   .item1{
     position: absolute;
     top: -15px;
-    left: 275px;
+    right:20px;
+    margin-right: 0;
   }
   .title-tank{
     margin-top: 0;
@@ -607,9 +610,6 @@ li{
     margin-left: -20px;
     align-items: center;
   }
-  .cards-container1{
-    justify-content: none;
-  }
   .marseille-accomodation{
     width: 100%;
     align-items: center;
@@ -664,16 +664,7 @@ li{
   .footer-assist{
     flex-direction: column;
   }
-  #c{
-    position: relative;
-    top: -40px;
-    right: 8px;
-  }
-  #b{
-    position: relative;
-    right: 4px;
-  }
-  /* fin media querie max 375px */
+  /* fin media querie max 1024px */
 }
 
 

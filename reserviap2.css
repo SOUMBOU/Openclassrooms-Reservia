@@ -24,6 +24,7 @@ h3{
 header{
   width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .high-page {
   display: flex;

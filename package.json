@@ -1,0 +1,23 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass OH_MY_FOOD/ohmyfoodp3.scss OH_MY_FOOD/ohmyfoodp3.css",
+    "sass:watch": "sass --watch OH_MY_FOOD/ohmyfoodp3.scss OH_MY_FOOD/ohmyfoodp3.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soumbou/openclassrooms-reservia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soumbou/openclassrooms-reservia/issues"
+  },
+  "homepage": "https://github.com/soumbou/openclassrooms-reservia#readme",
+  "dependencies": {
+    "sass": "^1.35.2"
+  }
+}
